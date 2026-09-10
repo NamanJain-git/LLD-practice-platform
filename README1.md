@@ -532,6 +532,4 @@ Review
 
 **Naman Jain**
 
-Frontend / React.js Developer
-
-Built as an engineering assignment demonstrating React, Node.js, MongoDB, LLD/domain modeling, AI evaluation, and reliable application design.
+BCA Graduate | Frontend / React.js Developer
