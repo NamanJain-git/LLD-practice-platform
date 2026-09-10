@@ -5,7 +5,6 @@ import connectDB from "./config/db.js";
 
 import problemRoutes from "./routes/problemRoutes.js";
 import attemptRoutes from "./routes/attemptRoutes.js";
-import llmRoutes from "./routes/llmRoutes.js";
 
 dotenv.config();
 
@@ -24,7 +23,6 @@ app.get("/", (req, res) => {
 
 app.use("/api/problems", problemRoutes);
 app.use("/api/attempts", attemptRoutes);
-app.use("/api/llm", llmRoutes);
 
 const PORT = process.env.PORT || 5000;
 
