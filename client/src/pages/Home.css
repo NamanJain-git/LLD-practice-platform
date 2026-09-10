@@ -1,0 +1,289 @@
+.home-page {
+    min-height: 100vh;
+    background: #f8fafc;
+    color: #0f172a;
+}
+
+/* Navbar */
+
+.navbar {
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.navbar-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 0;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.logo-subtitle {
+    margin: 3px 0 0;
+    font-size: 12px;
+    color: #64748b;
+}
+
+.history-button {
+    border: none;
+    background: transparent;
+
+    padding: 9px 14px;
+    border-radius: 8px;
+
+    color: #475569;
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.history-button:hover {
+    background: #f1f5f9;
+}
+
+/* Hero */
+
+.hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 24px 65px;
+}
+
+.hero-content {
+    max-width: 760px;
+}
+
+.hero-badge {
+    display: inline-block;
+
+    padding: 7px 12px;
+    border-radius: 999px;
+
+    background: #eef2ff;
+    color: #4f46e5;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.hero h2 {
+    margin: 22px 0 0;
+
+    font-size: 48px;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+
+    font-weight: 750;
+}
+
+.hero p {
+    max-width: 680px;
+
+    margin-top: 22px;
+
+    color: #64748b;
+
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* Problems */
+
+.problems-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px 80px;
+}
+
+.section-header {
+    margin-bottom: 25px;
+}
+
+.section-header h3 {
+    margin: 0;
+
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.section-header p {
+    margin: 7px 0 0;
+
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* Grid */
+
+.problems-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+/* Card */
+
+.problem-card {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 300px;
+
+    padding: 24px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+
+    box-shadow:
+        0 2px 5px rgba(15, 23, 42, 0.04);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.problem-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+.card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.difficulty {
+    padding: 6px 10px;
+
+    border-radius: 999px;
+
+    background: #f1f5f9;
+    color: #475569;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.card-type {
+    color: #94a3b8;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.problem-card h4 {
+    margin: 22px 0 0;
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.problem-description {
+    margin: 10px 0 0;
+
+    color: #64748b;
+
+    font-size: 14px;
+    line-height: 1.65;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+}
+
+/* Button */
+
+.start-button {
+    width: 100%;
+
+    margin-top: auto;
+    padding: 12px 16px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #0f172a;
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background 0.2s ease;
+}
+
+.start-button:hover {
+    background: #1e293b;
+}
+
+/* States */
+
+.loading {
+    color: #64748b;
+}
+
+.error {
+    padding: 14px 16px;
+
+    border: 1px solid #fecaca;
+    border-radius: 10px;
+
+    background: #fef2f2;
+    color: #dc2626;
+
+    font-size: 14px;
+}
+
+/* Responsive */
+
+@media (max-width: 850px) {
+    .problems-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h2 {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar-inner,
+    .hero,
+    .problems-section {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .hero {
+        padding-top: 55px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+}
